@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;   
 }
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 body{
     font-family: "SuisseIntl-Regular";
     background-color: #DCCFB7;
@@ -34,29 +37,32 @@ body{
     height: auto;
     display: flex;
     align-items: center;
-
 }
+
 .hero-image{
     margin: 0 auto;
     position: relative;
     margin-top: 80px;
-
 }
+
 .hero-text{
     display: flex;
     margin-top: 40px;
     justify-content: space-between;
     align-items: center;
 }
+
 .hero-image img{
     height: auto;
     width: 700px;
     object-fit: cover;
 }
+
 .hero-text .upper{
     font-size: 35px;
     letter-spacing: 0.5px;
 }
+
 .hero-text{
     margin-left: 80px;
 }
@@ -79,6 +85,7 @@ body{
     border: 1px solid black;
     transition: 0.5s;
 }
+
 input::placeholder{
     font-size: 15px;
     outline: none;
@@ -88,7 +95,6 @@ input:focus {
     outline: none !important;
 }
 
-
 .bike-hero {
     min-height: 100vh;
     display: flex;
@@ -96,6 +102,7 @@ input:focus {
     position: relative;
     overflow: hidden;
 }
+
 .bike-hero-content {
     flex: 1;
     padding: 4rem;
@@ -177,9 +184,11 @@ input:focus {
     background-color: #DCCFB7;
     margin-bottom: 6rem;
 }
+
 .second-page{
     background: linear-gradient(224deg,#eee5d3 20%,#fffaf4 81.18%)
 }
+
 .third-page{
     background:linear-gradient(247.2deg,#e3e5fc 8.64%,#f7f8fc 52.48%,#efeeeb 86.51%);
 }
@@ -187,6 +196,7 @@ input:focus {
 .fourth-page{
     background: linear-gradient(225deg,#e7eae7 30.32%,#f6f0e9 100.3%);
 }
+
 #change-image img{
     width: 574px;
     height: 550px;
@@ -208,23 +218,26 @@ input:focus {
     justify-content: center;
     background: linear-gradient(25deg,#dff0fd -60%,#faf3ea 45.65%);
 }
+
 .fifth-page{
     background: linear-gradient(25deg,#dff0fd -60%,#faf3ea 45.65%);
 }
+
 .rect1 img{
     height: 370px;
     width: 257px;
     border-radius: 20px;
 }
+
 .rect2 img{
     height: 370px;
     width: 257px;
     border-radius: 20px;
 }
+
 .phone img{
     height: 740px;
     width: 378px;
-
 }
 
 .rect3 img{
@@ -232,6 +245,7 @@ input:focus {
     width: 257px;
     border-radius: 20px;
 }
+
 .rect4 img{
     height: 370px;
     width: 257px;
@@ -241,6 +255,7 @@ input:focus {
 .fifth-sub-page{
     background-color: #F2F2F0;
 }
+
 .lower h1 {
     display: flex;
     justify-content: center;
@@ -249,6 +264,7 @@ input:focus {
     color: #1d1d1d;
     margin-bottom: 20px;
 }
+
 .lower p{
     display: flex;
     justify-content: center;
@@ -258,6 +274,7 @@ input:focus {
     line-height: 26px;
     margin-bottom: 40px;
 }
+
 .explore-content{
     display: flex;
     margin: 0 auto;
@@ -271,7 +288,6 @@ input:focus {
     width: fit-content;
     transition: background-color 0.3s ease;
 }
-
 
 .explore-content:hover {
     background-color: #333;
@@ -311,103 +327,191 @@ input:focus {
 .seventh-page{
     background: linear-gradient(216deg,#645957 7.62%,#aea09e 45.4%,#edebeb 98.67%);
 }
+
 #large img{
     width: 85%;
     margin-top: 125px;
 }
 
-/* Existing styles remain unchanged */
+/* Media Queries for Responsiveness */
 
+/* Large Screens (1200px and down) */
 @media screen and (max-width: 1200px) {
-    .hero-text {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
     .hero-image img {
-        width: 80%;
-    }
-    .bike-hero {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-    .bike-hero-image img {
         width: 90%;
+        max-width: 600px;
+    }
+
+    .bike-hero {
+        padding: 1rem;
+    }
+
+    .bike-hero-content {
+        padding: 2rem;
+    }
+
+    .bike-hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .upper-2 {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .phone img {
+        height: auto;
+        width: 300px;
+    }
+
+    .rect1 img, .rect2 img, .rect3 img, .rect4 img {
+        height: auto;
+        width: 200px;
     }
 }
 
+/* Medium Screens (992px and down) */
 @media screen and (max-width: 992px) {
     .nav-conatiner {
         flex-direction: column;
         height: auto;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .left {
+        margin-left: 0;
+    }
+
+    .hero-text {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        margin: 2rem 1rem;
+    }
+
+    .email-box {
+        margin-right: 0;
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .bike-hero {
+        flex-direction: column;
+    }
+
+    .bike-hero-content {
+        text-align: center;
         align-items: center;
     }
-    .left, .right {
-        margin: 10px 0;
-        text-align: center;
-    }
+
     .bike-features {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 2rem;
     }
+
     .bike-feature {
         padding-right: 0;
     }
-}
 
-@media screen and (max-width: 768px) {
-    .bike-hero-content {
-        padding: 2rem;
-        text-align: center;
-    }
-    .bike-hero-content h1 {
-        font-size: 3rem;
-    }
-    .bike-explore-btn, .bike-explore-btn-white {
+    #change-image img {
         width: 100%;
-        padding: 0.8rem;
-    }
-    .upper-2 {
-        flex-direction: column;
-        align-items: center;
-    }
-    .rect1 img, .rect2 img, .rect3 img, .rect4 img {
-        width: 90%;
         height: auto;
-        margin-bottom: 20px;
+        margin-top: 2rem;
     }
-    .phone img {
-        width: 95%;
-        height: auto;
+
+    .bike-hero-image {
+        margin-top: 2rem;
     }
 }
 
-@media screen and (max-width: 576px) {
+/* Small Screens (768px and down) */
+@media screen and (max-width: 768px) {
     .hero-text .upper {
         font-size: 28px;
-        text-align: center;
     }
+
     .hero-text .lower {
         font-size: 16px;
-        text-align: center;
     }
-    .email-box {
-        width: 90%;
-    }
-    .lower h1 {
-        font-size: 40px;
-        text-align: center;
-    }
-    .lower p {
-        font-size: 16px;
-        text-align: center;
-    }
+
     .bike-hero-content h1 {
         font-size: 2.5rem;
+    }
+
+    .bike-explore-btn, .bike-explore-btn-white {
+        width: 100%;
+        max-width: 300px;
         text-align: center;
     }
-    .bike-hero {
+
+    .upper-2 {
+        flex-direction: column;
         padding: 1rem;
+    }
+
+    .lower h1 {
+        font-size: 40px;
+        padding: 0 1rem;
+    }
+
+    .lower p {
+        font-size: 16px;
+        padding: 0 1rem;
+    }
+
+    .phone img {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .rect1 img, .rect2 img, .rect3 img, .rect4 img {
+        width: 90%;
+        max-width: 200px;
+    }
+}
+
+/* Extra Small Screens (576px and down) */
+@media screen and (max-width: 576px) {
+    .hero-image {
+        margin-top: 40px;
+    }
+
+    .bike-hero-content {
+        padding: 1rem;
+    }
+
+    .bike-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .bike-label {
+        font-size: 1rem;
+    }
+
+    .bike-features {
+        margin-top: 3rem;
+    }
+
+    .lower h1 {
+        font-size: 32px;
+    }
+
+    .lower p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+/* Fix for color dots panel on mobile */
+@media screen and (max-width: 480px) {
+    .panel {
+        right: 5px !important;
+    }
+    
+    .color {
+        height: 25px !important;
+        width: 25px !important;
     }
 }

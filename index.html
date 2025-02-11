@@ -9,7 +9,10 @@
     <link href="https://db.onlinewebfonts.com/c/d1a580023d40c546276decde1c711e60?family=SuisseIntl-Bold" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/c446362802681bacaacbad0f39bfc1a5?family=SuisseIntl-Medium" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/88f10bf18a36407ef36bf30bc25a3618?family=SuisseIntl-Regular" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
 </head>
 <body>
     <style>
@@ -19,6 +22,10 @@
         .color:hover{
             scale: 1.05;
         }
+        .scroll-images {
+        opacity: 0;
+        }
+
     </style>
     <section class="first-page">
         <div class="nav-conatiner">
@@ -31,7 +38,7 @@
         </div>
         <div class="hero">
             <div class="hero-image">
-                <img src="./assets/classic-sand_871x@2x.webp" alt="hero-image">
+                <img class="landing-image" src="./assets/classic-sand_871x@2x.webp" alt="hero-image">
             </div>
         </div>
         <div class="hero-text">
@@ -73,7 +80,7 @@
                 </div>
             </div>
             <div class="bike-hero-image" id="large">
-                <img src="./assets/cruiser-sand_highlight_792x@2x.webp" alt="Modern Electric Bike">
+                <img class="scroll-images" src="./assets/cruiser-sand_highlight_792x@2x.webp" alt="Modern Electric Bike">
             </div>
         </main>
     </section>
@@ -81,7 +88,7 @@
     <section class="third-page">
         <main class="bike-hero" id="second">
             <div class="bike-hero-image" id="change-second-page-image">
-                <img src="./assets/cruiser-st-lavender_hero-cropped_alt_852x@2x.webp" alt="Modern Electric Bike">
+                <img class="scroll-images" src="./assets/cruiser-st-lavender_hero-cropped_alt_852x@2x.webp" alt="Modern Electric Bike">
             </div>
 
             <div class="bike-hero-content">
@@ -131,7 +138,7 @@
                 </div>
             </div>
             <div class="bike-hero-image" id="change-image">
-                <img src="./assets/classic-black-front_hero-cropped_671x@2x.webp" alt="Modern Electric Bike">
+                <img class="scroll-images" src="./assets/classic-black-front_hero-cropped_671x@2x.webp" alt="Modern Electric Bike">
             </div>
         </main>
     </section>
@@ -139,38 +146,38 @@
     <section class="fifth-page">
         <div class="upper-2">
             <div class="rect1">
-                <img src="./assets/1st_rect.webp" alt="CO2">
+                <img class="scroll-images" src="./assets/1st_rect.webp" alt="CO2">
             </div>
             <div class="rect2">
-                <img src="./assets/2nd_rect.webp" alt="">
+                <img src="./assets/2nd_rect.webp">
             </div>
-            <div class="phone">
-                <img src="./assets/phone_rect.webp" alt="">
+            <div class="phone scroll-images">
+                <img src="./assets/phone_rect.webp">
             </div>
             <div class="rect3 ">
-                <img src="./assets/3rd_rect.webp" alt="">
+                <img src="./assets/3rd_rect.webp">
             </div>
-            <div class="rect4">
-                <img src="./assets/4th_rect.webp" alt="">
+            <div class="rect4">http://127.0.0.1:5500/assets/cross-st--front-mushroom_852x@2x.webp
+                <img class="scroll-images" src="./assets/4th_rect.webp">
             </div>
         </div>
         <div class="lower">
-            <h1>Introducing Games</h1>
+            <h1 class="scroll-images">Introducing Games</h1>
             <p>Combine the thrill of level-based challenges with Cowboy's interactive social <br> features and safely infuse your ride with an extra layer of excitement.</p>
-            <button class="explore-content">Explore Content</button>
+            <button class="explore-content scroll-i mages">Explore Content</button>
         </div>
     </section>
 
     <section class="sixth-page">
         <main class="bike-hero">
             <div class="bike-hero-content">
-                <p style="color: white;" class="bike-label">Cross</p>
+                <p style="color: white;" class="bike-label scroll-images">Cross</p>
                 <h1 style="color: white;">Built for <br>adventure</h1>
-                <button class="bike-explore-btn-white">Explore</button>
+                <button class="bike-explore-btn-white scroll-images">Explore</button>
 
             </div>
             <div class="bike-hero-image">
-                <img src="./assets/cross-moss_1440x@2x.webp" alt="Cross-moss" style="scale: 1.3; position: relative; right: -50;">
+                <img class="change-scroll" src="./assets/cross-moss_1440x@2x.webp" alt="Cross-moss" style="scale: 1.3; position: relative; right: -50;">
             </div>
         </main>
     </section>
@@ -178,12 +185,12 @@
     <section class="seventh-page">
         <main class="bike-hero" id="second">
             <div class="bike-hero-image" id="change-second-page-image" style="margin-left: 10rem;">
-                <img style="scale: 0.94;" src="./assets/cross-st--front-mushroom_852x@2x.webp" alt="Modern Electric Bike">
+                <img style="scale: 0.94;" class="scroll-images" src="./assets/cross-st--front-mushroom_852x@2x.webp" alt="Modern Electric Bike">
             </div>
 
             <div class="bike-hero-content" style="margin-left: 8rem;">
                 <p style="color: white;" class="bike-label">Cross ST</p>
-                <h1 style="color: white;">Shockingly <br>smooth</h1>
+                <h1 class="scroll-images" style="color: white;">Shockingly <br>smooth</h1>
                 <button class="bike-explore-btn-white">Explore</button>
                 
                 <div class="bike-features" style="color: white;">
